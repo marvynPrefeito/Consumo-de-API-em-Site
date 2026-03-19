@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Harry Potter API</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    section {
+      margin: 40px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #6366f1;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4f46e5;
+    }
+  </style>
+</head>
+<body>
+
+<h1>⚡ Mundo Harry Potter</h1>
+
+<button onclick="carregarPersonagens()">Personagens</button>
+<button onclick="carregarEstudantes()">Estudantes</button>
+<button onclick="carregarFeiticos()">Feitiços</button>
+
+<!-- Seção 1 -->
+<section>
+  <h2>🧙 Personagens</h2>
+  <div id="personagens" class="container"></div>
+</section>
+
+<!-- Seção 2 -->
+<section>
+  <h2>🎓 Estudantes</h2>
+  <div id="estudantes" class="container"></div>
+</section>
+
+<!-- Seção 3 -->
+<section>
+  <h2>✨ Feitiços</h2>
+  <div id="feiticos" class="container"></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
